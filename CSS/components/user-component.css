@@ -44,3 +44,25 @@
   display: block;
   margin-bottom: 10px;
 }
+.user-component__chats {
+  display: flex;
+  flex-direction: column;
+}
+.user-component__chats__chat {
+  margin-bottom: 20px;
+}
+.user-component__column__number {
+  display: flex;
+  align-items: center;
+}
+.user-component__column__error {
+  margin-left: 5px;
+  display: block;
+  padding: 0px 5px;
+  text-align: center;
+  color: tomato;
+  border: 2px solid tomato;
+  border-radius: 50%;
+  font-weight: 1000;
+  font-size: 15px;
+}

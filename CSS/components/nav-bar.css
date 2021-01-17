@@ -22,10 +22,6 @@
   bottom: 15px;
 }
 .nav__notification-set {
-  background-color: tomato;
-  width: 5px;
-  height: 5px;
-  border-radius: 2.5px;
   position: absolute;
   right: -10px;
 }
