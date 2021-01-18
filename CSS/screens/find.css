@@ -85,3 +85,24 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+    color: white;
+  }
+  50% {
+    transform: scale(1.5);
+    color: tomato;
+  }
+  100% {
+    transform: none;
+    color: white;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  /* 브라우저에게 사전에 변화를 알려, 컴퓨터가 그래픽카드를 이용해 더 부드러운 움직임을 만듬*/
+  animation: heartBeat 1s linear infinite;
+}

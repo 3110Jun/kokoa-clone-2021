@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/styles.css" />
-    <title>Settings - Kokoa Clone</title>
+    <title>Settings - Abocado Clone</title>
   </head>
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No service</span>
+        <span>Nomad-Coder</span>
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
@@ -22,7 +22,50 @@
       </div>
     </div>
 
-    <main class="main-screen more-screen"></main>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="more.html">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Setting</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fas fa-search fa-lg"></i>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-bullhorn"></i>
+            <span>Notices</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-flask"></i>
+            <span>Kokoa Lab</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-info-circle"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings__setting-column">Latest Version</div>
+        </li>
+      </ul>
+      <div class="setting__message">
+        <span>🎊</span>
+        <span>끝!</span>
+        <span>-Thanks Nico-</span>
+      </div>
+    </main>
 
     <nav class="nav">
       <ul class="nav__list">
@@ -50,7 +93,9 @@
         </li>
       </ul>
     </nav>
-
+    <div id="no-mobile">
+      <span>스크린을 줄여주세요 🥑</span>
+    </div>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

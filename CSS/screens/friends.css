@@ -24,3 +24,47 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.seed {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #b57d28;
+  margin: 20px 0;
+}
+.seed-light {
+  color: white;
+  position: absolute;
+  font-size: 130px;
+  left: 185px;
+  top: 365px;
+  font-weight: 400;
+  transform: rotateZ(15deg);
+}
+#splash-screen span:first-child {
+  font-size: 60px;
+}
+#splash-screen {
+  background-color: greenyellow;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 80px;
+  font-weight: 600;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 2s;
+}

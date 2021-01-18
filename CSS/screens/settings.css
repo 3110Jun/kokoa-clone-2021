@@ -1,0 +1,67 @@
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings__setting i {
+  opacity: 0.8;
+  margin-right: 20px;
+  font-size: 22px;
+}
+.settings__setting-column:last-child {
+  opacity: 0.5;
+}
+.setting__message {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 130px;
+  font-size: 90px;
+  font-weight: 800;
+}
+.setting__message span:first-child {
+  margin-bottom: 20px;
+}
+.setting__message span:last-child {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+@keyframes done {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes popLeft {
+  from {
+  }
+  to {
+    transform: none;
+  }
+}
+
+.setting__message span:first-child {
+  animation: done 3s ease-in-out;
+}
+.setting__message span:nth-child(2) {
+  animation: popLeft 1s ease-in-out forwards;
+  transform: translatex(-400px);
+  animation-delay: 2s;
+}
+.setting__message span:nth-child(3) {
+  animation: popLeft 1s ease-in-out forwards;
+  transform: translatex(400px);
+  animation-delay: 2s;
+}

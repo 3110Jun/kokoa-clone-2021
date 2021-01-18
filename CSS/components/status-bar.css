@@ -24,3 +24,17 @@
 .status-bar__column .fa-battery-full {
   margin: 0 5px;
 }
+@keyframes colorFlip {
+  0% {
+    color: gray;
+  }
+  50% {
+    color: var(--yellow);
+  }
+  100% {
+    color: gray;
+  }
+}
+.status-bar__column .fa-bolt {
+  animation: colorFlip 2s linear infinite;
+}
