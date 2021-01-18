@@ -35,6 +35,7 @@
   }
 }
 .seed {
+  position: relative;
   width: 200px;
   height: 200px;
   border-radius: 100px;
@@ -45,8 +46,8 @@
   color: white;
   position: absolute;
   font-size: 130px;
-  left: 185px;
-  top: 365px;
+  left: 20px;
+  top: 3px;
   font-weight: 400;
   transform: rotateZ(15deg);
 }
